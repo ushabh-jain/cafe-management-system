@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+
+*{
+  font-family: 'Architects Daughter', cursive;
+  overflow-x: hidden;
+}
+
+h1{
+  
+  text-align: center;
+  font-size: 40px;
+  color: whitesmoke;
+  
+ 
+}
+.main{
+  
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 60px;
+  
+}
+
+
+
+a{
+  color:whitesmoke;
+}
+body{
+  background: url('https://wallpaperaccess.com/full/106815.jpg');
+  background-size:cover;
+  position:relative;
+}
+.p{
+  font-size: 20px;
+  color: whitesmoke;
+  font-weight: 200;
+  display: flex;
+  margin-left: 80px;
+  width: 82%;
+  justify-content: space-between;
+  margin-top: 78px;
+}
+
+.p img{
+  mix-blend-mode: lighten;
+}
+
+.buttons{
+  margin-top: 5%;
+  /* justify-content: space-between; */
+}
+.main a{
+  text-decoration: none;
+}
+.buttons .but1{
+  width: 7%;
+  margin-top: 2.2%;
+  height: 8%;
+    margin-right: 4px;
+    background-color: aqua;
+    position: absolute;
+    top: 0em;
+    left: 103em;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+.buttons .but2{
+  width: 7%;
+  margin-top: 2.2%;
+  height: 8%;
+    background-color: rgb(120, 60, 60);
+    position: absolute;
+    top: 0em;
+    left: 100em;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+.truth{
+  margin-top: 221px;
+    margin-left: 10px;
+    color: whitesmoke;
+    font-size: 48px;
+    text-align: center;
+}
+
+.coffee{
+  border: 10px;
+}
+
+.cart-items{
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  width: 46%;
+  margin-right: auto;
+}
+
+.cart-item{
+  background-color: white;
+  display: flex;
+  color: #ac6400;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  padding: 0px;
+  margin: auto;
+  background-image: url(https://img.freepik.com/premium-vector/continuous-line-drawing-shopping-cart-minimal-line-icon-white-background-icon-banner-vector-illustration_41981-2060.jpg?w=2000);
+  background-position: center;
+  background-size: contain;
+}
+
+.cart-item p{
+  color: #fff;
+  animation: flicker 1.5s infinite alternate;  
+  font-size: 19px;
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+  }
+  20%, 24%, 55% {       
+    text-shadow: none;
+  }
+}
+footer {
+  text-align:center;
+  padding: 5px;
+
+  color: whitesmoke;
+  margin-top: 128px;
+} 
+article {
+  min-height: 100%;
+  display: grid;
+  /* grid-template-rows: auto 1fr auto; */
+}

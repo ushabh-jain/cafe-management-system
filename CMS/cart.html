@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WELCOME | PSC</title>
+        <link rel="stylesheet" href="cafe.css" />
+        <link rel="stylesheet" href="about.css" />
+      </head>
+      <body>
+        <h1 class="unihover">"PiZzA StOnE CaFe"</h1>
+        <div class="main">
+          <a href="/">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="menu.html">MENU</a>
+          <a href="cart.html">CART</a>
+        </div>
+        <h2 style="text-align: center; color: white">My Cart</h2>
+        <div class="cart-items"></div>
+        <script>
+          const cartdiv = document.getElementsByClassName("cart-items")[0];
+          const arr = localStorage.getItem("cartitems");
+          const cart = JSON.parse(arr);
+          cart.forEach((element) => {
+            // Create a new div element
+            const div = document.createElement("div");
+            div.classList.add("cart-item");
+
+            // Set the inner HTML of the div to the cart item
+            div.innerHTML = element;
+
+            // Append the div to the cartdiv container
+            cartdiv.appendChild(div);
+          });       
+        </script>
+        <script src="js.js"></script>
+      </body>
+    </html>
+  </body>
+</html>
